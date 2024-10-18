@@ -21,8 +21,9 @@ defmodule Riak.Mixfile do
   defp deps do
     [ {:ex_doc, ">= 0.0.0", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
-      {:pooler, "~> 1.5.3"},
-      {:riakc, "~> 2.5.3"} ]
+      {:pooler, "~> 1.6"},
+      {:riakc, git: "https://github.com/kivra/riak-erlang-client"},
+    ]
   end
 
   defp description do
